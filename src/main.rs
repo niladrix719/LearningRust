@@ -1,7 +1,5 @@
-use std::io;
-
 fn main() {
-    let mut string = String::new();
-    io::stdin().read_line(&mut string).expect("failed to read line");
-    println!("{}",string);
+    let s = "64";
+    let num: i32 = s.trim().parse().unwrap();
+    println!("{}",num * 2);
 }
