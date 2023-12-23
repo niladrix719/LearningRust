@@ -1,3 +1,7 @@
+use std::io;
+
 fn main() {
-    println!("Hello, world!");
+    let mut string = String::new();
+    io::stdin().read_line(&mut string).expect("failed to read line");
+    println!("{}",string);
 }
