@@ -1,5 +1,8 @@
+fn sum(a:i32, b:i32) -> i32{
+    return a + b;
+}
+
 fn main() {
-    let s = "64";
-    let num: i32 = s.trim().parse().unwrap();
-    println!("{}",num * 2);
+    let s = String::from("hello");
+    println!("{}",sum(20,80));
 }
